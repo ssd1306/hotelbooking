@@ -33,7 +33,7 @@ public class StepDefHotelBooking {
 	objhbpg = new HotelBookingPageFactory(driver);
 	objhbpg = PageFactory.initElements(driver,HotelBookingPageFactory.class );
 
-	//driver.get("file:///C:/Users/rutkulka/Documents/BDD/hotelBooking/hotelbooking.html");
+	//driver.get("C:\Users\sabyasda\Desktop\Cap files\hotel_booking.html");
 	}
 
 
@@ -42,7 +42,7 @@ public void user_is_on_hotel_booking_page() throws Throwable {
 	//driver = new FirefoxDriver();
 	//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	//objhbpg = new HotelBookingPageFactory(driver);
-	driver.get("C:\Users\sabyasda\Desktop\Cap files\hotel_booking.html");
+	driver.get("C:\\Users\\sabyasda\\Desktop\\Cap files\\hotel_booking.html");
 }
 
 @Then("^check the title of the page$")
@@ -76,7 +76,7 @@ public void user_enters_all_valid_data() throws Throwable {
 
 @Then("^navigate to welcome page$")
 public void navigate_to_welcome_page() throws Throwable {
-	driver.navigate().to("C:\Users\sabyasda\Desktop\Cap files\hotel_booking.html");
+	driver.navigate().to("C:\\Users\\sabyasda\\Desktop\\Cap files\\hotel_booking.html");
 	String str1=driver.getTitle();
 	System.out.println(str1);
 	driver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
